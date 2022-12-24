@@ -5,13 +5,13 @@ public class _104_MaximumDepthOfBinaryTree {
     //
     //Найти максимальную глубину дерева (количество узлов к нему)
     public static void main(String[] args) {
-        TreeNode treeNode5 = new TreeNode(7, null, null);
-        TreeNode treeNode4 = new TreeNode(15, null, null);
-        TreeNode treeNode3 = new TreeNode(20, treeNode4, treeNode5);
-        TreeNode treeNode2 = new TreeNode(9, null, null);
-        TreeNode treeNode1 = new TreeNode(3, treeNode2, treeNode3);
+        TreeNode node5 = new TreeNode(7, null, null);
+        TreeNode node4 = new TreeNode(15, null, null);
+        TreeNode node3 = new TreeNode(20, node4, node5);
+        TreeNode node2 = new TreeNode(9, null, null);
+        TreeNode node1 = new TreeNode(3, node2, node3);
 
-        System.out.println(maxDepth(treeNode1)); //3
+        System.out.println(maxDepth(node1)); //3
     }
 
     //O(n) //O(n)

@@ -7,7 +7,6 @@ public class _70_ClimbingStairs {
     //3. 2 steps + 1 step
     //
     //Числа Фибонначи (сколько способов чтоб подняться в 1 и 2 шага)
-    //Формула Fn = (Fn − 2) + (Fn − 1)
     public static void main(String[] args) {
         int input1 = 2;
         int input2 = 3;
@@ -18,6 +17,7 @@ public class _70_ClimbingStairs {
         System.out.println(climbStairs(input3)); //8
     }
 
+    //Формула Fn = (Fn − 2) + (Fn − 1)
     //O(n) //O(1)
     private static int climbStairs(int num) {
         if (num < 4)

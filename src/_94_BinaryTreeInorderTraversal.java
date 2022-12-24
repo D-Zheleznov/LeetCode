@@ -7,11 +7,11 @@ public class _94_BinaryTreeInorderTraversal {
     //
     //Неупорядоченный обход узлов дерева
     public static void main(String[] args) {
-        TreeNode treeNode3 = new TreeNode(3, null, null);
-        TreeNode treeNode2 = new TreeNode(2, treeNode3, null);
-        TreeNode treeNode1 = new TreeNode(1, null, treeNode2);
+        TreeNode node3 = new TreeNode(3, null, null);
+        TreeNode node2 = new TreeNode(2, node3, null);
+        TreeNode node1 = new TreeNode(1, null, node2);
 
-        System.out.println(inorderTraversal(treeNode1)); //[1,3,2]
+        System.out.println(inorderTraversal(node1)); //[1,3,2]
     }
 
     //O(n) //O(n)
