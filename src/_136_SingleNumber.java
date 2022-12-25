@@ -3,19 +3,15 @@ import java.util.Map;
 
 public class _136_SingleNumber {
 
+    private static final int[] INPUT_1 = new int[]{2, 2, 1};
+    private static final int[] INPUT_2 = new int[]{4, 1, 2, 1, 2};
+    private static final int[] INPUT_3 = new int[]{1};
+
     //Найти число в массиве которое встречается только один раз
     public static void main(String[] args) {
-        int[] input1 = new int[]{2,2,1};
-        int[] input2 = new int[]{4,1,2,1,2};
-        int[] input3 = new int[]{1};
-
-        System.out.println(singleNumber(input1)); //1
-        System.out.println(singleNumber(input2)); //4
-        System.out.println(singleNumber(input3)); //1
-
-        System.out.println(singleNumber2(input1)); //1
-        System.out.println(singleNumber2(input2)); //4
-        System.out.println(singleNumber2(input3)); //1
+        System.out.println(singleNumber(INPUT_1)); //1
+        System.out.println(singleNumber(INPUT_2)); //4
+        System.out.println(singleNumber(INPUT_3)); //1
     }
 
     //O(n) //O(n)

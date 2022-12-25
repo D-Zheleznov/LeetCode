@@ -2,19 +2,19 @@ import java.util.*;
 
 public class _66_PlusOne {
 
+    private static final int[] INPUT_1 = new int[]{1, 2, 3};
+    private static final int[] INPUT_2 = new int[]{9, 9, 9, 9};
+    private static final int[] INPUT_3 = new int[]{4, 3, 2, 1};
+    private static final int[] INPUT_4 = new int[]{9, 1, 9, 9};
+    private static final int[] INPUT_5 = new int[]{9};
+
     //Увеличить число на 1 распределённое в массиве
     public static void main(String[] args) {
-        int[] input1 = new int[]{1, 2, 3};
-        int[] input2 = new int[]{9, 9, 9, 9};
-        int[] input3 = new int[]{4, 3, 2, 1};
-        int[] input4 = new int[]{9, 1, 9, 9};
-        int[] input5 = new int[]{9};
-
-        System.out.println(Arrays.toString(plusOne(input1))); //[1,2,4]
-        System.out.println(Arrays.toString(plusOne(input2))); //[1,0,0,0,0]
-        System.out.println(Arrays.toString(plusOne(input3))); //[4,3,2,2]
-        System.out.println(Arrays.toString(plusOne(input4))); //[9,2,0,0]
-        System.out.println(Arrays.toString(plusOne(input5))); //[1,0]
+        System.out.println(Arrays.toString(plusOne(INPUT_1))); //[1,2,4]
+        System.out.println(Arrays.toString(plusOne(INPUT_2))); //[1,0,0,0,0]
+        System.out.println(Arrays.toString(plusOne(INPUT_3))); //[4,3,2,2]
+        System.out.println(Arrays.toString(plusOne(INPUT_4))); //[9,2,0,0]
+        System.out.println(Arrays.toString(plusOne(INPUT_5))); //[1,0]
     }
 
     //O(n) //O(1)

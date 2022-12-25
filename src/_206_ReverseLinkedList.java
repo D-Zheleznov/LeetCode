@@ -1,20 +1,19 @@
+import util.ListNode;
+
+import static util.Util.printListNode;
+
 public class _206_ReverseLinkedList {
+
+    private static final ListNode NODE_5 = new ListNode(5);
+    private static final ListNode NODE_4 = new ListNode(4, NODE_5);
+    private static final ListNode NODE_3 = new ListNode(3, NODE_4);
+    private static final ListNode NODE_2 = new ListNode(2, NODE_3);
+    private static final ListNode NODE_1 = new ListNode(1, NODE_2);
 
     //Развернуть односвязный список
     public static void main(String[] args) {
-        ListNode node5 = new ListNode(5);
-        ListNode node4 = new ListNode(4, node5);
-        ListNode node3 = new ListNode(3, node4);
-        ListNode node2 = new ListNode(2, node3);
-        ListNode node1 = new ListNode(1, node2);
-
-        reverseList(node1);
-
-        ListNode current = node5;
-        while (current != null) {
-            System.out.println(current.val); //[5,4,3,2,1]
-            current = current.next;
-        }
+        reverseList(NODE_1);
+        printListNode(NODE_5); //[5,4,3,2,1]
     }
 
     //O(n) //O(1)
@@ -27,19 +26,5 @@ public class _206_ReverseLinkedList {
             head = next;
         }
         return newHead;
-    }
-
-    private static class ListNode {
-        private int val;
-        private ListNode next;
-
-        private ListNode(int val) {
-            this.val = val;
-        }
-
-        private ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 }

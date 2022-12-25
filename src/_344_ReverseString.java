@@ -2,15 +2,16 @@ import java.util.Arrays;
 
 public class _344_ReverseString {
 
+    private static final char[] INPUT_1 = new char[]{'h', 'e', 'l', 'l', 'o'};
+    private static final char[] INPUT_2 = new char[]{'H', 'a', 'n', 'n', 'a', 'h'};
+
     //Развернуть массив символов
     public static void main(String[] args) {
-        char[] input1 = new char[]{'h','e','l','l','o'};
-        char[] input2 = new char[]{'H','a','n','n','a','h'};
+        reverseString(INPUT_1);
+        reverseString(INPUT_2);
 
-        reverseString(input1);
-        reverseString(input2);
-        System.out.println(Arrays.toString(input1)); //[o, l, l, e, h]
-        System.out.println(Arrays.toString(input2)); //[h, a, n, n, a, H]
+        System.out.println(Arrays.toString(INPUT_1)); //[o, l, l, e, h]
+        System.out.println(Arrays.toString(INPUT_2)); //[h, a, n, n, a, H]
     }
 
     //O(n) //O(1)

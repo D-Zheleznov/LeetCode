@@ -1,12 +1,12 @@
 public class _14_LongestCommonPrefix {
 
+    private static final String[] INPUT_1 = new String[]{"flower", "flow", "flight"};
+    private static final String[] INPUT_2 = new String[]{"dog", "racecar", "car"};
+
     //Найти общий префикс
     public static void main(String[] args) {
-        String[] input1 = new String[]{"flower","flow","flight"};
-        String[] input2 = new String[]{"dog","racecar","car"};
-
-        System.out.println(longestCommonPrefix(input1)); //fl
-        System.out.println(longestCommonPrefix(input2)); //""
+        System.out.println(longestCommonPrefix(INPUT_1)); //fl
+        System.out.println(longestCommonPrefix(INPUT_2)); //""
     }
 
     //O(n) //O(1)

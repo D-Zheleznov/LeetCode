@@ -1,20 +1,20 @@
 public class _70_ClimbingStairs {
 
+    private static final int INPUT_1 = 2;
+    private static final int INPUT_2 = 3;
+    private static final int INPUT_3 = 5;
+
     //Input: n = 3
     //Output: 3
     //1. 1 step + 1 step + 1 step
     //2. 1 step + 2 steps
     //3. 2 steps + 1 step
     //
-    //Числа Фибонначи (сколько способов чтоб подняться в 1 и 2 шага)
+    //Числа Фибонначи (сколько способов чтобы подняться в 1 и 2 шага)
     public static void main(String[] args) {
-        int input1 = 2;
-        int input2 = 3;
-        int input3 = 5;
-
-        System.out.println(climbStairs(input1)); //2
-        System.out.println(climbStairs(input2)); //3
-        System.out.println(climbStairs(input3)); //8
+        System.out.println(climbStairs(INPUT_1)); //2
+        System.out.println(climbStairs(INPUT_2)); //3
+        System.out.println(climbStairs(INPUT_3)); //8
     }
 
     //Формула Fn = (Fn − 2) + (Fn − 1)

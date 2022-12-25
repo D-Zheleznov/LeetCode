@@ -1,14 +1,14 @@
 public class _191_NumberOf1Bits {
 
+    private static final String INPUT_1 = "00000000000000000000000000001011";
+    private static final String INPUT_2 = "00000000000000000000000010000000";
+    private static final String INPUT_3 = "11111111111111111111111111111101";
+
     //Сколько единиц в строке
     public static void main(String[] args) {
-        String input1 = "00000000000000000000000000001011";
-        String input2 = "00000000000000000000000010000000";
-        String input3 = "11111111111111111111111111111101";
-
-//        System.out.println(hammingWeight(input1)); //3
-//        System.out.println(hammingWeight(input2)); //1
-//        System.out.println(hammingWeight(input3)); //31
+//        System.out.println(hammingWeight(INPUT_1)); //3
+//        System.out.println(hammingWeight(INPUT_2)); //1
+//        System.out.println(hammingWeight(INPUT_3)); //31
     }
 
     //O(n) //O(1)

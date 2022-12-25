@@ -3,6 +3,10 @@ import java.util.List;
 
 public class _412_FizzBuzz {
 
+    private static final int INPUT_1 = 3;
+    private static final int INPUT_2 = 5;
+    private static final int INPUT_3 = 15;
+
     //answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
     //answer[i] == "Fizz" if i is divisible by 3.
     //answer[i] == "Buzz" if i is divisible by 5.
@@ -10,13 +14,9 @@ public class _412_FizzBuzz {
     //
     //Создать массив по определённому шаблону
     public static void main(String[] args) {
-        int input1 = 3;
-        int input2 = 5;
-        int input3 = 15;
-
-        System.out.println(fizzBuzz(input1)); //["1","2","Fizz"]
-        System.out.println(fizzBuzz(input2)); //["1","2","Fizz","4","Buzz"]
-        System.out.println(fizzBuzz(input3)); //["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
+        System.out.println(fizzBuzz(INPUT_1)); //["1","2","Fizz"]
+        System.out.println(fizzBuzz(INPUT_2)); //["1","2","Fizz","4","Buzz"]
+        System.out.println(fizzBuzz(INPUT_3)); //["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
     }
 
     //O(N) //O(1)

@@ -2,6 +2,10 @@ import java.util.Map;
 
 public class _13_RomanToInteger {
 
+    private static final String INPUT_1 = "III";
+    private static final String INPUT_2 = "LVIII";
+    private static final String INPUT_3 = "MCMXCIV";
+
     //Symbol       Value
     //I             1
     //V             5
@@ -16,13 +20,9 @@ public class _13_RomanToInteger {
     //
     //Спарсить римские цифры в латинские
     public static void main(String[] args) {
-        String input1 = "III";
-        String input2 = "LVIII";
-        String input3 = "MCMXCIV";
-
-        System.out.println(romanToInt(input1)); //3
-        System.out.println(romanToInt(input2)); //58
-        System.out.println(romanToInt(input3)); //1994
+        System.out.println(romanToInt(INPUT_1)); //3
+        System.out.println(romanToInt(INPUT_2)); //58
+        System.out.println(romanToInt(INPUT_3)); //1994
     }
 
     //O(n) //O(n)

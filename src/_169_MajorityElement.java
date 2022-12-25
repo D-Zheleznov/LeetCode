@@ -4,13 +4,13 @@ import java.util.Map;
 
 public class _169_MajorityElement {
 
+    private static final int[] INPUT_1 = new int[]{3, 2, 3};
+    private static final int[] INPUT_2 = new int[]{2, 2, 1, 1, 1, 2, 2};
+
     //Найти число в массиве большее чем длина массива / 2
     public static void main(String[] args) {
-        int[] input1 = new int[]{3, 2, 3};
-        int[] input2 = new int[]{2, 2, 1, 1, 1, 2, 2};
-
-        System.out.println(majorityElement3(input1)); //3
-        System.out.println(majorityElement3(input2)); //2
+        System.out.println(majorityElement3(INPUT_1)); //3
+        System.out.println(majorityElement3(INPUT_2)); //2
     }
 
     //O(n) //O(n)
